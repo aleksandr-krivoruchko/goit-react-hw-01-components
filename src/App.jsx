@@ -7,14 +7,8 @@ export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 20,
-        textTransform: 'uppercase',
         color: '#010101',
-        backgroundColor: '#e3e3e3',
+        backgroundColor: '#e8e8e8',
       }}
     >
       <Profile
