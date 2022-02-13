@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export function Profile(props) {
   const {
     username,
@@ -33,3 +35,13 @@ export function Profile(props) {
     </div>
   );
 }
+
+Profile.prototype = {
+  username: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  avatar: PropTypes.string,
+  followers: PropTypes.number,
+  views: PropTypes.number,
+  likes: PropTypes.number,
+};
