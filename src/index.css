@@ -54,7 +54,7 @@ code {
   padding: 20px;
   border: 1px solid #e3e3e3;
 }
-.avatar {
+.profile .avatar {
   background-color: antiquewhite;
   margin: 0 auto;
   border-radius: 50%;
@@ -107,6 +107,7 @@ code {
   width: 280px;
   margin: 0 auto;
   text-align: center;
+  margin-bottom: 20px;
 }
 .title {
   margin-bottom: 10px;
@@ -123,7 +124,7 @@ code {
   padding: 10px;
   border: 1px solid #e3e3e3;
   width: 25%;
-  background-color: rgb(46, 46, 150);
+  background-color: rgb(51, 51, 209);
   color: #fff;
 }
 .label {
@@ -133,4 +134,44 @@ code {
 .percentage {
   font-weight: 700;
   font-size: 18px;
+}
+
+/* task 3 ================================= */
+
+.friends {
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.friend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 4px 4px 8px 0px rgba(35, 143, 227, 0.2);
+}
+.friend:not(:last-child) {
+  margin-bottom: 10px;
+}
+.friends .avatar {
+  width: 80px;
+}
+
+.status-green {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: green;
+  border-radius: 50%;
+}
+
+.status-red {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  border-radius: 50%;
 }

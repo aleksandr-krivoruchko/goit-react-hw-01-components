@@ -1,7 +1,11 @@
 import { Profile } from './components/Profile';
-import { Statistics } from './components/Statistics';
-import data from './data.json';
-import user from './user.json';
+import { Section } from './components/Section';
+import { StatList } from './components/StatList';
+import { FriendList } from './components/FriendList';
+
+import data from './jsons/data.json';
+import user from './jsons/user.json';
+import friends from './jsons/friends.json';
 
 export const App = () => {
   return (
@@ -18,8 +22,13 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Statistics title="Upload stats" stats={data} />;
-      {/* <Statistics stats={data} />; */}
+      <Section title="Upload stats" className="statistics">
+        <StatList stats={data} />
+      </Section>
+
+      <Section title="Friends list" className="friends">
+        <FriendList friends={friends} />,
+      </Section>
     </div>
   );
 };
