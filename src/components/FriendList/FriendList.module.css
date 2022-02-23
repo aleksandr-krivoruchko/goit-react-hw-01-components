@@ -1,0 +1,11 @@
+.friend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 4px 4px 8px 0px rgba(35, 143, 227, 0.2);
+}
+.friend:not(:last-child) {
+  margin-bottom: 10px;
+}

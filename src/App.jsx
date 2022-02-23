@@ -1,8 +1,8 @@
-import { Profile } from './components/Profile';
-import { Section } from './components/Section';
-import { StatList } from './components/StatList';
-import { FriendList } from './components/FriendList';
-import { TransactionHistory } from './components/TransactionHistory';
+import { Profile } from 'components/Profile/Profile';
+import { Section } from 'components/Section/Section';
+import { StatList } from 'components/StatList/StatList';
+import { FriendList } from 'components/FriendList/FriendList';
+import { TransactionHistory } from 'components/TransactionHistory/TransactionHistory';
 
 import data from './jsons/data.json';
 import user from './jsons/user.json';
@@ -22,12 +22,14 @@ export const App = () => {
         tag={user.tag}
         location={user.location}
         avatar={user.avatar}
-        stats={user.stats}
+        followers={user.stats.followers}
+        views={user.stats.views}
+        likes={user.stats.likes}
       />
-      <Section title="Upload stats" className="statistics">
+      <Section title="Upload stats">
         <StatList stats={data} />
       </Section>
-      <Section title="Friends list" className="friends">
+      <Section title="Friends list">
         <FriendList friends={friends} />,
       </Section>
       <TransactionHistory items={transactions} />;

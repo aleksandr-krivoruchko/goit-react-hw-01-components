@@ -11,10 +11,17 @@
     "isOnline": false,
     "id": 1137
   },
+    {
+    "avatar": "https://cdn-icons-png.flaticon.com/512/1998/1998749.png",
+    "name": "Polyglot",
+    "isOnline": true,
+    "id": 1284
+  },
+
   {
     "avatar": "https://cdn-icons-png.flaticon.com/512/1623/1623681.png",
     "name": "Ajax",
-    "isOnline": true,
+    "isOnline": false,
     "id": 1213
   },
   {
@@ -25,20 +32,14 @@
   },
   {
     "avatar": "https://cdn-icons-png.flaticon.com/512/1998/1998749.png",
-    "name": "Polyglot",
-    "isOnline": false,
-    "id": 1284
-  },
-  {
-    "avatar": "https://cdn-icons-png.flaticon.com/512/1998/1998749.png",
     "name": "Poly",
-    "isOnline": true,
+    "isOnline": false,
     "id": 1784
   },
   {
     "avatar": "https://cdn-icons-png.flaticon.com/512/1623/1623681.png",
-    "name": "AjaxJr",
-    "isOnline": false,
+    "name": "Marsik",
+    "isOnline": true,
     "id": 2213
   }
 ]
